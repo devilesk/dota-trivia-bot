@@ -4,6 +4,7 @@ Built on top of [node-dota2](https://github.com/Arcana/node-dota2).
 
   - [Installation](#installation)
   - [Setup](#setup)
+  - [Usage](#usage)
   - [Bot Config](#bot-config)
   - [Admin Config](#admin-config)
   - [Trivia Config](#trivia-config)
@@ -20,6 +21,14 @@ npm install
 ## Setup
 
 Rename the `config_example` folder to `config` and edit the configuration files within.
+
+## Usage
+
+After setting up the configuration files you can run the bot.
+
+```
+node index.js
+```
 
 ## Bot Config
 
