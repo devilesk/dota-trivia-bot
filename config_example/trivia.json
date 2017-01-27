@@ -1,0 +1,29 @@
+{
+    "channel": "Test Channel",
+    "autoStart": true,
+    "maxHints": 6,
+    "hintInterval": 10000,
+    "startMessage": "",
+    "periodicMessageCount": 100,
+    "periodicMessage": "",
+    "keepAlivePrompt": "Bot suspects that its questions aren't being seen and will restart in 30 seconds. Say !cancel if you can see this message to prevent restart.",
+    "keepAliveCancel": "Restart canceled. Trivia resuming.",
+    "keepAliveResponseWait": 30000,
+    "unansweredThreshold": 5,
+    "maxPointsPerAnswer": 5,
+    "nextQuestionDelay": 5000,
+    "questionSources": [
+        {
+            "path": "./path/to/trivia/wordlist",
+            "questionModifier": "scramble",
+            "weight": 0.2
+        },
+        {
+            "path": "./path/to/question/file",
+            "questionModifier": null,
+            "weight": 0.8
+        }
+    ],
+    "databaseAddress": "mongodb://localhost/",
+    "databaseName": "testDb"
+}

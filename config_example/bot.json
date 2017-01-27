@@ -1,0 +1,19 @@
+{
+    "steam_name": "Test Bot",
+    "steam_user": "",
+    "steam_pass": "",
+    "steam_guard_code": "",
+    "dotaCommandProcessDelay": 1000,
+    "cmdChar": "!",
+    "userCommandProcessDelay": 3000,
+    "maxUserCommandQueueSize": 10,
+    "userCommandLogClearDelay": 60000,
+    "owner_account_id": "",
+    "owner_account_id_64": "",
+    "plugins": [
+        "general",
+        "chatlog",
+        "admin",
+        "trivia"
+    ]
+}

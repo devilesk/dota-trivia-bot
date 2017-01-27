@@ -1,0 +1,3 @@
+[submodule "dota-datafiles-trivia"]
+	path = dota-datafiles-trivia
+	url = https://devilesk@bitbucket.org/devilesk/dota-datafiles-trivia.git

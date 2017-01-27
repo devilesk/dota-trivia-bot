@@ -1,0 +1,14 @@
+{
+  "name": "dota-trivia-bot",
+  "version": "0.0.0",
+  "description": "A dota 2 bot for Dota 2 Reborn.",
+  "main": "./bot/index.js",
+  "private": true,
+  "author": "devilesk",
+  "dependencies": {
+    "dota2": "^4.2.1",
+    "mongodb": "^2.2.21",
+    "steam": "^1.4.0"
+  },
+  "license": "ISC"
+}

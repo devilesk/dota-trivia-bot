@@ -1,0 +1,10 @@
+{
+    "databaseAddress": "mongodb://localhost/",
+    "databaseName": "testDb",
+    "collectionName": "chatlog",
+    "collectionOptions": {
+        "capped": true,
+        "size": 5242880,
+        "max": 100
+    }
+}
