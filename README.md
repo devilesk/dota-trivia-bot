@@ -294,6 +294,6 @@ MongoDB collection options.
 
 The bot core handles connection to Steam and Dota, listening to node-dota2 events, and loading of plugins. It maintains and processes two queues, one for dota commands and another for user input commands. This provides rate limiting.
 
-All other functionality is provided through plugins. Plugins inherit from the [base plugin module](https://github.com/github/devilesk/blob/master/bot/plugins/index.js) which sets up listening to some default bot ready and chat events. Each plugin has a config json file in the config folder which provides plugin specific options. Plugins that process user commands implement a handler.js file containing chat command handlers.
+All other functionality is provided through plugins. Plugins inherit from the [base plugin module](https://github.com/devilesk/dota-trivia-bot/blob/master/bot/plugins/index.js) which sets up listening to some default bot ready and chat events. Each plugin has a config json file in the config folder which provides plugin specific options. Plugins that process user commands implement a handler.js file containing chat command handlers.
 
-Use the [existing plugins](https://github.com/github/devilesk/tree/master/bot/plugins) as examples.
+Use the [existing plugins](https://github.com/devilesk/dota-trivia-bot/tree/master/bot/plugins) as examples.
