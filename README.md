@@ -9,7 +9,7 @@ Built on top of [node-dota2](https://github.com/Arcana/node-dota2).
   - [Trivia Config](#trivia-config)
   - [Chat Log Config](#chat-log-config)
   - [General Config](#general-config)
-  - [Plugins](#plugins)
+  - [Plugins](#plugins-1)
 
 ## Installation
 
