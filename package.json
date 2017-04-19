@@ -6,7 +6,7 @@
   "private": true,
   "author": "devilesk",
   "dependencies": {
-    "dota2": "^4.2.1",
+    "dota2": "^5.0.1",
     "mongodb": "^2.2.21",
     "steam": "^1.4.0"
   },
