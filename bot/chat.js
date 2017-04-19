@@ -54,5 +54,5 @@ Dota2Bot.prototype.leaveChat = function (channel_name, channel_type, callback, c
 
 Dota2Bot.prototype.sendMessage = function (channel_name, message, channel_type, callback, condition) {
     channel_type = this.getChannelType(channel_type);
-    this.dotaCommandQueue.push(new Command(this.Dota2.sendMessage, [channel_name, message, channel_type], callback, condition, this.Dota2));
+    this.dotaCommandQueue.push(new Command(this.Dota2.sendMessage, [message, channel_name, channel_type], callback, condition, this.Dota2));
 }
