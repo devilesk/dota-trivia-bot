@@ -1,5 +1,5 @@
 var dota2 = require('dota2');
-var channelTypeEnum = dota2.schema.lookupEnum("DOTAChatChannelType_t");
+var channelTypeEnum = dota2.schema.lookupEnum("DOTAChatChannelType_t").values;
 var channelTypeAliasMap = {};
 
 function getChannelAlias(channelTypeName) {
