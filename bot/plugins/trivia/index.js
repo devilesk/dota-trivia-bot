@@ -31,6 +31,8 @@ var TriviaPlugin = function (bot, options) {
     this.userCollection.on("ready", this.start.bind(this));
     this.joinChatTimer = null;
 }
+TriviaPlugin.prototype = Object.create(Plugin.prototype);
+TriviaPlugin.prototype.constructor = TriviaPlugin;
 
 TriviaPlugin.prototype.start = function () {
     console.log('trivia ready', this.ready, 'userCollection ready', this.userCollection.ready);

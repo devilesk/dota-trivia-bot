@@ -26,7 +26,7 @@ var ChatLogPlugin = function (bot, options) {
 ChatLogPlugin.prototype = Object.create(Plugin.prototype);
 ChatLogPlugin.prototype.constructor = ChatLogPlugin;
 
-ChatLogPlugin.prototype.onChatMessage = ChatLogPlugin.prototype.onChatCommand = function (channel, persona_name, message, chatObject) {
+ChatLogPlugin.prototype.onChatMessage = ChatLogPlugin.prototype.onChatCommand = ChatLogPlugin.prototype.onChatSendMessage = function (channel, persona_name, message, chatObject) {
     if (!this.ready) return;
     this.logCollection.insert({"createdAt": new Date(), "channel": channel, "message": message, "account_id": chatObject.account_id, "persona_name": persona_name}, {w:1}, function(err, result) {
         if (err) util.log('insert error logCollection', channel, chatObject.account_id, persona_name, message);

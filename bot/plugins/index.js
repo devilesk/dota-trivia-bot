@@ -8,6 +8,7 @@ var Plugin = function (name, bot, options) {
     this.bot.on("chatJoined", this.onDotaChatJoined.bind(this));
     this.bot.on("chatMessage", this.onChatMessage.bind(this));
     this.bot.on("chatCommand", this.onChatCommand.bind(this));
+    this.bot.on("chatSendMessage", this.onChatSendMessage.bind(this));
     this.bot.on("ready", this.onDotaReady.bind(this));
     this.commandHandlers = require('./' + name + '/handlers');
 }
@@ -15,6 +16,7 @@ var Plugin = function (name, bot, options) {
 Plugin.prototype.onDotaReady = function () {}
 Plugin.prototype.onDotaChatJoined = function (channelData) {}
 Plugin.prototype.onChatMessage = function (channel, persona_name, message, chatObject) {}
+Plugin.prototype.onChatSendMessage = function (channel, persona_name, message, chatObject) {}
 Plugin.prototype.onChatCommand = function (channel, persona_name, message, chatObject, args) {
     console.log('plugin onChatCommand', channel, persona_name, message, chatObject, args, this.commandHandlers);
     if (this.commandHandlers.hasOwnProperty(args[0])) {
