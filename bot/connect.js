@@ -27,6 +27,8 @@ Dota2Bot.prototype.onSteamLogOff = function (eresult) {
 
 Dota2Bot.prototype.onSteamError = function (error) {
     util.log("Connection closed by server: " + error);
+    console.log('process ending');
+    process.exit(0);
 }
 
 Dota2Bot.prototype.onSteamSentry = function (sentry, callback) {
