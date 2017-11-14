@@ -1,4 +1,5 @@
 var path = require('path');
+var Command = require("../Command");
 
 var Plugin = function (name, bot, options) {
     this.name = name;
